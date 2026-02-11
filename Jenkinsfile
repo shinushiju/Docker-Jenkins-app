@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         HOST_PORT = '4000'
-        IMAGE_NAME = 'ritesh355/docker-jenkins-app'   // Docker Hub repo
+        IMAGE_NAME = 'shinushiju/docker-jenkins-app'   // Docker Hub repo
     }
 
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/ritesh355/Docker-Jenkins-app.git'
+                git branch: 'main', url: 'https://github.com/shinushiju/Docker-Jenkins-app.git'
             }
         }
 
