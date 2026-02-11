@@ -22,7 +22,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 sh 'docker stop docker-jenkins-app || true && docker rm docker-jenkins-app || true'
-                sh "docker run -d --name docker-jenkins-app -p ${HOST_PORT}:3000 docker-jenkins-app:latest"
+                sh "docker run -d --name docker-jenkins-app -p ${HOST_PORT}:4000 docker-jenkins-app:latest"
             }
         }
 
